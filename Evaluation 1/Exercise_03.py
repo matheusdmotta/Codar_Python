@@ -10,3 +10,15 @@ serem digitados os valores 9, 3 e 5, para as variáveis n1, n2 e n3, respetivame
 resposta é 5. Use uma estrutura condicional (ou seja, não pode ordenar os números e
 ler o valor que está no meio dos três)
 '''
+
+n1 = int(input("Digite o primeiro número inteiro (n1): "))
+n2 = int(input("Digite o segundo número inteiro (n2): "))
+n3 = int(input("Digite o terceiro número inteiro (n3): "))
+
+if (n1 < n2 and n1 > n3) or (n1 > n2 and n1 < n3):
+    valor_intermedio = n1
+elif (n2 < n1 and n2 > n3) or (n2 > n1 and n2 < n3):
+    valor_intermedio = n2
+else:
+    valor_intermedio = n3
+print(f"O valor intermédio é: {valor_intermedio}")
